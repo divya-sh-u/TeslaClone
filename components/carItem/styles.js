@@ -1,10 +1,10 @@
 
 
-import { StyleSheet } from "react-native-web";
+import { StyleSheet,Dimensions } from "react-native-web";
 const styles = StyleSheet.create({
     carContainer:{
         width:'100%',
-        height:'100%',
+        height: Dimensions.get('window').height,
     
       },
       titles:{
@@ -13,21 +13,23 @@ const styles = StyleSheet.create({
         alignItems: 'center',
       },
       subtitle:{
-    
+        fontSize: 16,
+        color: '#5c5e62'
       },
       title:{
         fontSize:40,
         fontWeight:'500',
       },
       image:{
-        position:'absolute',
+        
         width:'100%',
         height:'100%',
         resizeMode:'cover',
+        position:'absolute',
       },
       buttonContainer:{
         postion:'absolute',
-        bottom:-450,
+        bottom:-400,
         width:'100%',
       },
       subtitleCTA:{

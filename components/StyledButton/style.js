@@ -6,16 +6,18 @@ container:{
     padding: 10,
 },
     button:{
-        backgroundColor:'white',
+        
         height:40,
+        borderRadius:20,
         justifyContent:'center',
         alignItems:'center',
-        borderRadius:20,
+        
 },
 text:{
     fontWeight:'700',
     fontSize: 14,
     textTransform:'uppercase',
-}
+},
+
 });
 export default styles;
