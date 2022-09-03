@@ -3,21 +3,24 @@ import React from 'react';
 import styles from './styles';
 import StyledButton from '../StyledButton';
 const CarItem = (props) => {
+    const {name,tagline,taglineCTA,image} = props;
   return (
     
       <View style={styles.carContainer}>
-        <ImageBackground style={styles.image} source={require('../../assets/Model3.jpeg')}/>
+        <ImageBackground style={styles.image} source={image}/>
         <View style={styles.titles}>
-          <Text style={styles.title}>Model G</Text>
-          <Text style={styles.subtitle}>Starting at 69,000$</Text>
+          <Text style={styles.title}>{name}</Text>
+          <Text style={styles.subtitle}>{tagline}{' '}
+          <Text style={styles.subtitleCTA}>{taglineCTA}</Text></Text>
         </View>
+        <View style={styles.buttonContainer}>
         <StyledButton type='primary' content={'Custom Order'} onPress={()=>{
             console.warn('custom order button was pressed')
         }}/>
         <StyledButton type='secondary' content={'Existing Inventory'} onPress={()=>{
             console.warn('Existing Inventory button was pressed')
         }}/>
-        
+        </View>
       </View>
 
     

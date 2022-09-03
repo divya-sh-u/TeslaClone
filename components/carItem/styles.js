@@ -25,5 +25,13 @@ const styles = StyleSheet.create({
         height:'100%',
         resizeMode:'cover',
       },
+      buttonContainer:{
+        postion:'absolute',
+        bottom:-450,
+        width:'100%',
+      },
+      subtitleCTA:{
+        textDecorationLine:'underline',
+      }
 });
 export default styles;
