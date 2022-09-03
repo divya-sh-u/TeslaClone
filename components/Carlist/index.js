@@ -1,8 +1,8 @@
 import React from "react";
 import {View,FlatList, Dimensions} from 'react-native';
 import  styles from './styles';
-import CarItem from "../CarItem";
 import cars from "./cars";
+import CarItem from "../CarItem";
 const Carlist = (props) => {
   return (
     <View style={styles.container}>
